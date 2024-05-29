@@ -7,8 +7,6 @@ class rpg:
         self.habilidade = habilidade
         self.dano_alterado = 0 
         self.vivo = True
-        
-        
 
     def dano_causado(self):
         if self.vivo:
@@ -16,10 +14,6 @@ class rpg:
            print (f'{self.categoria} causou {self.dano_alterado} de dano utilizando {self.habilidade}')
         else:
             print(f'{self.categoria} está morto e não pode causar dano.')
-           
-           
-
-    
 
     def dano_sofrido(self,dano):
         if self.vivo:
@@ -31,9 +25,6 @@ class rpg:
                print(f'{self.categoria} sofreu {dano} de dano, restando {self.vida} de HP')
         else:
             print(f'{self.categoria} sofreu {dano} de dano, restando {self.vida} de HP')
-          
-       
-
 
     def missão(self):
         if self.vivo:
